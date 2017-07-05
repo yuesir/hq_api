@@ -1,2 +1,2 @@
 # hq_api
-Implementation Examples of API Calls
+you MUST replace the apiKey and secret with your own
