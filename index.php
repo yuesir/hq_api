@@ -43,10 +43,10 @@ $orderQueryString  = createQueryString($orderParams);
 $orderQueryString .= 'sign='.$orderSign;
 
 //call API
-//$productApiUrl  = 'https://affiliate.gearbest.com/api/products/list-promotion-products?'.$productQueryString;
-//$productResult  = file_get_contents($productApiUrl);
-//$productResult  = json_decode($productResult, true);
-//print_r($productResult);
+$productApiUrl  = 'https://affiliate.gearbest.com/api/products/list-promotion-products?'.$productQueryString;
+$productResult  = file_get_contents($productApiUrl);
+$productResult  = json_decode($productResult, true);
+print_r($productResult);
 
 echo '=============================================';
 $orderApiUrl    = 'https://affiliate.gearbest.com/api/orders/completed-orders?'.$orderQueryString; //沙箱环境调用地址
